@@ -1,5 +1,5 @@
 <?php
-
 function badFormatting( ) {
-echo "hello world";
+echo "hello";
+echo "world";
 }
