@@ -1,0 +1,11 @@
+name: Use DevOps Intelligence
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+
+jobs:
+  ai-review:
+    uses: jakemackie/devops-intelligence-action/.github/workflows/pr-review.yml@main
+    secrets:
+      OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
